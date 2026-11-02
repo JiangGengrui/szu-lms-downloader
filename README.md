@@ -1,5 +1,7 @@
 # 畅课课件下载助手
 
+> Chrome extension to download courseware from Shenzhen University LMS (lms.szu.edu.cn).
+
 一个 Chrome / Edge 浏览器插件，用于**深圳大学畅课平台（lms.szu.edu.cn）**的课件下载。
 
 解决痛点：老师上传课件时只开放了「阅读」权限、没有开放「下载」权限，导致无法离线学习、无法归档整理课件。本插件通过监听课件预览请求，提取真实下载链接，一键下载到本地。
