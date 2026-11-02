@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>畅课下载</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="hd">
+    <div class="hd-glow" aria-hidden="true"></div>
+    <div class="hd-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </span>
+        <div class="brand-text">
+          <h1 class="brand-name">畅课下载</h1>
+          <p class="brand-sub">LMS · COURSEWARE</p>
+        </div>
+      </div>
+      <div class="live" title="正在监听课件预览请求">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span class="live-label">监听中</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <span class="toolbar-label">已捕获 <b class="mono" id="count">0</b> 份</span>
+    <div class="toolbar-actions">
+      <button class="btn btn-primary" id="btnAll" title="一键下载全部课件">全部下载</button>
+      <button class="btn btn-ghost" id="btnClear" title="清空列表">清空</button>
+    </div>
+  </div>
+
+  <ul class="list" id="list"></ul>
+
+  <div class="empty" id="empty">
+    <span class="empty-mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+        <polyline points="7 10 12 15 17 10"/>
+        <line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+    </span>
+    <p class="empty-title">还没有捕获课件</p>
+    <p class="empty-sub">在畅课平台点开课件预览<br/>下载链接会自动出现在这里</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
